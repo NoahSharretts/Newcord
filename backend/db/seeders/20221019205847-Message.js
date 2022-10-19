@@ -7,6 +7,8 @@ module.exports = {
         body: 'Hello World',
         channelId: 1,
         userId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
 
     ], {});

@@ -7,11 +7,15 @@ module.exports = {
         name: 'Demo Server',
         ownerId: 1,
         serverImg: 'https://i.imgur.com/4ZQZ1Zm.png',
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         name: 'Fake Server 2',
         ownerId: 1,
         serverImg: 'https://i.imgur.com/4ZQZ1Zm.png',
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
     ], {});
 

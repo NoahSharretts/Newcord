@@ -6,10 +6,14 @@ module.exports = {
       {
         name: 'Demo Channel 1',
         serverId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         name: 'Fake Channel 2',
         serverId: 2,
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
     ], {});
 
