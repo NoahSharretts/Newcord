@@ -11,6 +11,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Message.belongsTo(models.User, { foreignKey: 'userId' });
+      Message.belongsTo(models.Channel, { foreignKey: 'channelId' });
     }
   };
   Message.init({

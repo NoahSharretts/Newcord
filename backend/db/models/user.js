@@ -39,6 +39,12 @@ module.exports = (sequelize, DataTypes) => {
     };
     static associate(models) {
       // define association here
+      User.hasMany(models.Server, { foreignKey: 'ownerId' });
+      User.belongsToMany(models.Server, {
+        through: 'ServerMembers',
+        otherKey: 'serverId',
+        foreignKey: 'userId'
+      });
     }
   };
   User.init(
